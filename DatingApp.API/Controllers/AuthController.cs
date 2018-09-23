@@ -53,7 +53,7 @@ namespace DatingApp.API.Controllers
             if(userFromRepo == null)
                 return Unauthorized();
 
-            var claims = new[]
+            var claims = new[]  // WHICH CONTAINS TOKEN
             {
                 new Claim(ClaimTypes.NameIdentifier, userFromRepo.Id.ToString()),
                 new Claim(ClaimTypes.Name, userFromRepo.UserName)
