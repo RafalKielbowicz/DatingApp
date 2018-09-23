@@ -4,3 +4,4 @@ Currently, the application includes:
 
 - Salted password hashing
 - Token Authentication
+- Login and Register
