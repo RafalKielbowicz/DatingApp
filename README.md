@@ -6,3 +6,4 @@ Currently, the application includes:
 - Token Authentication
 - Login and Register
 - Errors handling
+- Added alertifyjs, auth0 angular JWT, ngx-bootstrap, bootswatch libraries
