@@ -8,3 +8,4 @@ Currently, the application includes:
 - Errors handling
 - Added alertifyjs, auth0 angular JWT, ngx-bootstrap, bootswatch libraries
 - Routing and AuthGuard
+- Mapping json data with AutoMapper
