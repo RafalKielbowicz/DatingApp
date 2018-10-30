@@ -15,6 +15,7 @@ export class MemberEditComponent implements OnInit {
 
   @ViewChild('editForm') editForm: NgForm; // to reset form
   user: User;
+  photoUrl: string;
 
   @HostListener('window:beforeunload', ['$event']) // to avoid losing informations from form if user will close tab
   unloadNotification($event: any) {
@@ -30,6 +31,7 @@ export class MemberEditComponent implements OnInit {
     this.route.data.subscribe(data => {
       this.user = data['user'];
     });
+    this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
   }
 
   updateUser() {
@@ -39,6 +41,10 @@ export class MemberEditComponent implements OnInit {
     }, error => {
       this.alertify.error(error);
     });
+  }
+
+  updateMainPhoto(photoUrl) {
+    this.user.photoUrl = photoUrl;
   }
 
 }
