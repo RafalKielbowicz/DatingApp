@@ -9,3 +9,4 @@ Currently, the application includes:
 - Added alertifyjs, auth0 angular JWT, ngx-bootstrap, bootswatch libraries
 - Routing and AuthGuard
 - Mapping json data with AutoMapper
+- ActionFilter to log user activity (https://www.npmjs.com/package/time-ago-pipe)
